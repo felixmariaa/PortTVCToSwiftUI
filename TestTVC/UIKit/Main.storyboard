@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eyx-oI-wRK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DepartmentTVC-->
+        <scene sceneID="U2U-7C-SmK">
+            <objects>
+                <tableViewController id="Eyx-oI-wRK" customClass="DepartmentTVC" customModule="TestUIKitTVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="f7n-Y1-Z1c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="43.5" id="fLf-sw-szU" customClass="DepartmentTVCell" customModule="TestUIKitTVC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fLf-sw-szU" id="8PH-Lb-fgm">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJB-WT-78J">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8X-7B-gh5">
+                                                    <rect key="frame" x="20" y="11.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="m8X-7B-gh5" firstAttribute="leading" secondItem="uJB-WT-78J" secondAttribute="leading" constant="20" symbolic="YES" id="QUz-SH-ocI"/>
+                                                <constraint firstItem="m8X-7B-gh5" firstAttribute="centerY" secondItem="uJB-WT-78J" secondAttribute="centerY" id="i3K-P4-GYJ"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="uJB-WT-78J" firstAttribute="width" secondItem="8PH-Lb-fgm" secondAttribute="width" id="6Iz-5Y-pL0"/>
+                                        <constraint firstItem="uJB-WT-78J" firstAttribute="centerY" secondItem="8PH-Lb-fgm" secondAttribute="centerY" id="Y4i-ZX-BUe"/>
+                                        <constraint firstItem="uJB-WT-78J" firstAttribute="centerX" secondItem="8PH-Lb-fgm" secondAttribute="centerX" id="cR7-1N-kDs"/>
+                                        <constraint firstItem="uJB-WT-78J" firstAttribute="height" secondItem="8PH-Lb-fgm" secondAttribute="height" id="wQu-aF-JFA"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label" destination="m8X-7B-gh5" id="ALq-Zt-2qr"/>
+                                    <outlet property="view" destination="uJB-WT-78J" id="1vB-hm-FlW"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Eyx-oI-wRK" id="2fP-ZA-e6K"/>
+                            <outlet property="delegate" destination="Eyx-oI-wRK" id="aVM-v5-Ebn"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6m-PU-jtp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386.95652173913044" y="121.875"/>
+        </scene>
+    </scenes>
+</document>
